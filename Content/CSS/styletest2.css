@@ -3,21 +3,35 @@ body{
     background: #141b23;
 }
 
+header,
+section,
+footer{
+    display:block;
+}
+
 .wrapper{
-    height: 666px;
-    width: 1000px;
-    background: #141b23 url('F:\projects/portfolio/Content/IMG/simple.PNG') no-repeat 0 0;
+    display: flex;
+    flex-direction: column;
+    max-height: 666px;
+    max-width: 1000px;
+    background: #141b23 url('../IMG/simple.PNG') no-repeat 100% 0;
     padding: 0;
-    position: absolute;
-    top: 0;
-    margin-left: auto;
+    margin-left: 0;
+    margin-top: 0; 
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper {
+        background: #141b23;
+    }
 }
 
 header{
     margin-left: 54px;
-    margin-top: 62px;
+    padding-top: 62px;
     font-size: 16px;
     color: white;
+    flex:1;
 }
  
 header a{
@@ -33,10 +47,11 @@ header a:hover{
 }
 
 section{
-    height: 265px;
-    width: 475px;
+   
+    max-width: 475px;
     margin-left: 96px;
     margin-top:65px;
+    flex:1;
 }
 
 section h1{
@@ -50,9 +65,12 @@ section p{
     font-size: 14px;
     color: #ffffff;
 }
-
+footer {
+    flex: 1;
+    margin-top:70px;
+}
 footer p{
-    position: absolute;
+    position: relative;
     bottom: 0;
     color: #2e343b;
     font-size: 12px;
