@@ -45,7 +45,7 @@ header {
 .header-more {
     float: right;
     width: 513px;
-    height: 85px;
+    height: 108px;
     color: white;
     text-align: right;
     padding-bottom: 25px;    
@@ -147,7 +147,7 @@ ul {
 
 .menu-left{
     width: 185px;
-    height: 336px;
+    height: 361px;
     color: white;
     line-height: 8px;
 }
@@ -160,13 +160,7 @@ ul {
         font-weight: bold;
         padding-top: 20px;
     }
-
-        /*.menu-left:hover p {
-            background: #e4e4e4 URL("hov.jpg") no-repeat center center;
-            border-radius: 12px;
-            cololr: black;
-        }*/
-
+       
 .content-top,
 .photo,
 .pixel {
@@ -176,7 +170,7 @@ ul {
 .green{
     width: 185px;
     height: 134px;
-    margin-top: 305px;
+    margin-top: 283px;
     margin-bottom: 24px;
 }
 
