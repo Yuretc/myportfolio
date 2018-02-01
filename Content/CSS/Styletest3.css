@@ -1,5 +1,9 @@
-﻿body {
+﻿.navbar{
+    width: 100%;
+}
+body {
     max-width: 1400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,40 +22,53 @@ footer{
 }
 
 header {
-    max-height: 16.4em;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 230px;
     width: 100%;
     background: #dbdbdb;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding: 65px 14%;
+    color: #757575;
+}
+.logo-name{
+    display:flex;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    background: #757575;
+}
+.name{
+    width: 230px;
+    margin: 10px 10px 14px 12px ;
+}
+.name h1{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin: 0;
 }
 
-/* @media screen and (min-width: 320px) {
-    header {
-        background-color: green;
-    }
+.name p{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
 }
 
-@media screen and (min-width: 550px) {
-    header {
-        background-color: #dbdbdb;
-    }
+.contacts{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin: 15px 0 0 0;
 }
 
-@media screen and (min-width: 768px) {
-    header {
-        background-color: red;
-    }
+.contacts p{
+    margin: 0
 }
-
-@media screen and (min-width: 960px) {
-    header {
-        background-color: #dbdbdb;
-    }
-} */
 
 .navigation {
+    justify-content: center;
     align-self: stretch;
-    min-height: 5.7em;
+    min-height: 5.7rem;
     width: 100%;
     background: #767676;
     padding: 2em 0;
@@ -65,11 +82,40 @@ header {
     font-size: 2em;
 }
 
+@media screen and (max-width: 1000px) {
+    .navigation ul{
+        font-size: 1rem;
+    }
+}
+
 .navigation ul li{
     align-self: center;
     list-style: none;
     padding: 0 1.2em;
 }
+
+@media screen and (max-width: 760px) {
+    header{
+        min-height: 140px;
+        padding: 30px;
+    }
+    
+    .navigation{
+        min-height: 3.7rem;
+        padding: 0;
+    }
+    .navigation ul{
+        margin: auto;
+        padding: 20px 0;
+    }
+    .navigation ul li {
+        font-size: 1rem;
+    }
+    footer{
+        padding: 50px 20px;
+    }
+}
+
 .nav-page{
     border-right: 4px solid white;
 }
@@ -91,12 +137,11 @@ header {
     justify-content: center;
     align-items: center;
     height: 400px;
-    width: 1400px;
     background: #f8f8f8;
 }
 
 svg{
-    width: 1300px;
+    width: 100%;
     height: 100%;     
 }
 @media screen and (max-width: 1250px) {
@@ -113,7 +158,7 @@ section {
     min-height: 785px;
     width: 100%;
     background: #ffffff;
-    padding-top: 28em;
+    padding-top: 30px;
 }
 
 .news{
@@ -125,7 +170,7 @@ section {
     background: #767676;
     font-size: 1em;
     color: #ffffff;
-    padding: 1.5em 3.8em 0 2.4em;
+    padding: 1.5rem 3.8rem 1.5rem 2.4rem;
 }
 
 .news-story{
@@ -149,21 +194,60 @@ section {
     font-size: 1em;
     color: #767676;
 }
-
+@media screen and (max-width: 760px) {
+    section{
+        padding: 30px 20px 20px;
+    }
+    .news{
+        margin-right: 20px;
+        margin-left: 0;
+    }
+    .about{
+        margin: 0;
+    }
+}
 footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 14%;
     min-height: 220px;
     width: 100%;
     background: #767676;
+    color: #ffffff;
 }
 
-.logo-and-contacts{
-    min-height: 100px;
-    width: 70%;
-    margin: 0px auto;
+.footer-1 p{
+    padding: 0;
+    margin: 0;
 }
 
-.logo {
-    height:7.14em;
-    width:  7.14em;
-    background: #757575;
+.footer-nav ul{
+    padding: 0;
+    margin: 0;
+}
+.footer-nav ul li{
+    list-style: none;
+}
+
+.footer-nav ul li a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-nav ul li a:hover{
+    cursor: pointer;
+}
+.footer-3{
+    width: 230px;
+    min-width: 180px;
+    height: 50px;
+    background: url(../img/logo-pixel-plus-middle.png) left center no-repeat;
+}
+
+.company-pixel-plus{
+    text-decoration: underline;
+}
+.footer-3 p{
+    padding: 0;
+    margin: 0 0 0 50px;
 }
