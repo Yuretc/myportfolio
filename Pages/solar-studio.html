@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../content/css/style-solar.css" />
+    <!-- <link rel="stylesheet" media="screen and (min-width: 760px)" href="Content/max-width-760-px.css" /> -->
+</head>
+
+<body>
+    <!-- В HEADER документа определяем логотип, оба  меню, выбор геолокации и контакты -->
+    <header>
+        <button class="buttom-menu gamburgerOpen" id="buttonMenuOpened">
+            <img height="23px" width="23px" src="../content/IMG/button-menu-open.png">
+        </button>
+        <button class="buttom-menu gamburgerClosed" id="buttonMenuClosed">
+            <img height="23px" width="23px" src="../content/IMG/button-menu-closed.png">
+        </button>
+
+        <div class="header-logo logo" id="dropdownMenuLogo">
+            <img src="../content/IMG/logo.png">
+        </div>
+
+        <div class="header-logo map-position" id="dropdownMenuPosition">
+            <img src="../content/IMG/check-point.png">
+            <a href="#">Московская область</a>
+        </div>
+        <div class="header-logo-contact">
+            <a href="#">Ссылка на старый сайт</a>
+            <p tel="+7495000000">+7 (495) 000-00-00</p>
+        </div>
+
+        <!-- Основное меню -->
+        <nav id="menuSecondLayer" class="HeaderClosed">
+            <ul class="second-layer">
+                <li>
+                    <a href="#">О компании
+                        <img class="arrow" src="../content/IMG/more-menu.png">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">Оборудование
+                        <img class="arrow" src="../content/IMG/more-menu.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Полезное
+                        <img class="arrow" src="../content/IMG/more-menu.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Новое на сайте
+                        <img class="arrow" src="../content/IMG/more-menu.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Обучение ГБО
+                        <img class="arrow" src="../content/IMG/more-menu.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Поддержка
+                        <img class="arrow" src="../content/IMG/more-menu.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Стать партнёром
+                        <img class="arrow" src="../content/IMG/more-menu.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Контакты
+                        <img class="arrow" src="../content/IMG/more-menu.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Дополнительное меню с калькулятором, примерами работ и принципом. -->
+        <nav id="menuFirstLayer" class="HeaderOpened">
+            <ul class="first-layer">
+                <li>
+                    <a href="#">
+                        <img class="first-layer-img-calc" src="../content/IMG/calculator.png"> Калькулятор экономии
+                        <img class="arrow" src="../content/IMG/more.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="first-layer-img-our-work" src="../content/IMG/our-work.png"> Примеры работ
+                        <img class="arrow" src="../content/IMG/more.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="first-layer-img-about-work" src="../content/IMG/about-work.png"> Принцип работы
+                        <img class="arrow" src="../content/IMG/more.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Хлебные крошки -->
+        <div class="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Металопрокат</a>
+                </li>
+                <li>
+                    <a href="#">Трубы</a>
+                </li>
+                <li>
+                    <a href="#">Трубы профилированные прямоугольные</a>
+                </li>
+            </ul>
+        </div>
+        <h1>
+            <span class="tube-style">Труба</span> прямоугольная профильная ГОСТ 8645-68 И ГОСТ 30245-2003
+        </h1>
+        <!-- Блок с товарами -->
+        <ul class="product-list">
+            <!-- Начало первого блока -->
+            <li>
+                <ul class="product-card product-card-first">
+                    <li class="product-card-img">
+                        <img src="../content/IMG/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="../content/IMG/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="../content/IMG/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="../content/IMG/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="../content/IMG/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="../content/IMG/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <!-- Конец первого блока -->
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="../content/IMG/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="../content/IMG/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="../content/IMG/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="../content/IMG/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="../content/IMG/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="../content/IMG/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="../content/IMG/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="../content/IMG/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="../content/IMG/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="../content/IMG/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="../content/IMG/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="../content/IMG/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="../content/IMG/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="../content/IMG/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="../content/IMG/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="../content/IMG/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="../content/IMG/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="../content/IMG/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="../content/IMG/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="../content/IMG/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="../content/IMG/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="../content/IMG/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="../content/IMG/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="../content/IMG/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <!-- <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="content/image/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="content/image/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="content/image/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="content/image/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="content/image/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="content/image/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li> -->
+            <!-- <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="content/image/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="content/image/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="content/image/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="content/image/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="content/image/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="content/image/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="content/image/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="content/image/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="content/image/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="content/image/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="content/image/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="content/image/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="content/image/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="content/image/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="content/image/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="content/image/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="content/image/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="content/image/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="content/image/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="content/image/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="content/image/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="content/image/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="content/image/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="content/image/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                    <ul>
+                            <li>
+                                <img src="content/image/tubes.png">
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                                    <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="cost">
+                                    <p>22990</p>
+                                    <div class="img-rub"><img src="content/image/rub.svg"</div>
+                                </div>
+                                <p>тонна</p>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="content/image/busket.svg">Купить
+                                </button>
+                                <div class="in-stock">
+                                    <img src="content/image/in-stock.svg">
+                                    <p>в наличии</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="content/image/calculator-tube.svg">
+                                </button>
+                            </li>
+                        </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="content/image/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="content/image/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="content/image/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="content/image/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="content/image/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="content/image/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="content/image/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="content/image/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="content/image/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="content/image/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="content/image/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="content/image/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="product-card">
+                    <li class="product-card-img">
+                        <img src="content/image/tubes.png">
+                    </li>
+                    <li>
+                        <ul class="about-product">
+                            <li>Труба нерж э/с 10x1,5 AISI 304 (08Х18Н10) зеркальн.</li>
+                            <li>[вес 1 п.м. = 0,25 кг, длина 6, 11,7 м]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="cost">
+                            <p>22990
+                                <img src="content/image/rub.png">
+                            </p>
+                            <button class="calculator-tube">
+                                <img src="content/image/calculator-tube.png">
+                            </button>
+                        </div>
+                        <p class="weight">тонна</p>
+                    </li>
+                    <li class="busket">
+                        <button>
+                            <img src="content/image/busket.png">Купить
+                        </button>
+                        <div class="in-stock">
+                            <img src="content/image/in-stock.png">
+                            <p>в наличии</p>
+                        </div>
+                    </li>
+                    <li class="calculator">
+                        <button>
+                            <img src="content/image/calculator-tube.png">
+                        </button>
+                    </li>
+                </ul>
+            </li> -->
+        </ul>
+        <!-- Пагинация -->
+        <div class="pagination">
+            <ul class="pagination-bar">
+                <li>
+                    <a href="#">
+                        <span class="previous-next-page mobil">&#60&#60</span>
+                        <span class="previous-next-page desktop">предыдущая</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li class="desktop">
+                    <a class="desktop" href="#">3</a>
+                </li>
+                <li class="desktop">
+                    <a class="desktop" href="#">4</a>
+                </li>
+                <li>
+                    <a>...</a>
+                </li>
+                <li>
+                    <a href="#">28</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="previous-next-page desktop">следующая</span>
+                        <span class="previous-next-page mobil"> &#62&#62</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="pagination-selector">
+                <div class="pagination-dropdown">
+                    <!-- <div class="pagination-selector-dropdown">
+                        Показывать</div>
+                    <ul id="paginationSelectorDropDown" class="pagination-selector-dropdown-menu">
+                        <li>15</li>
+                        <li>30</li>
+                        <li>50</li>
+                    </ul> -->
+                    <select class="pagination-selector-dropdown" id="paginationSelectorDropdown">
+                        <option value="10">Показывать</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+                <div class="pagination-selector-value" id="paginationSelectorValue">15</div>
+            </div>
+        </div>
+    </section>
+    <!-- Футер разбит на 5 блоков первый блок будет использоваться в мобильной версии, 
+        2-3-4 блоки в десктопной версии, 5 блок общий. -->
+    <footer>
+        <div class="footer-container">
+            <!-- Блок для мобильной версии -->
+            <div class="menu-footer-sm">
+                <ul>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#">Обучение</a>
+                    </li>
+                    <li>
+                        <a href="#">Оборудование</a>
+                    </li>
+                    <li>
+                        <a href="#">Установка</a>
+                    </li>
+                    <li>
+                        <a href="#">Регистрация</a>
+                    </li>
+                    <li>
+                        <a href="#">Примеры работ</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#">Ссылки на форум</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Блоки для десктопной версии -->
+            <div class="menu-footer-lg about-company">
+                <h3>О компании</h3>
+                <ul>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#">В мире</a>
+                    </li>
+                    <li>
+                        <a href="#">История</a>
+                    </li>
+                    <li>
+                        <a href="#">Управление качеством</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-footer-lg equipment">
+                <h3>Оборудование</h3>
+                <ul>
+                    <li>
+                        <a href="#">Оборудование</a>
+                    </li>
+                    <li>
+                        <a href="#">Комплекты</a>
+                    </li>
+                    <li>
+                        <a href="#">Комплекты Эконом</a>
+                    </li>
+                    <li>
+                        <a href="#">Комплекты Стандарт</a>
+                    </li>
+                    <li>
+                        <a href="#">Кмплекты Премиум</a>
+                    </li>
+                    <li>
+                        <a href="#">Комплекты Традиция</a>
+                    </li>
+                    <li>
+                        <a href="#">Комплекты Прямого впрыска</a>
+                    </li>
+                    <li>
+                        <a href="#">Редукторы</a>
+                    </li>
+                    <li>
+                        <a href="#">Мульиклапаны</a>
+                    </li>
+                    <li>
+                        <a href="#">Форснки</a>
+                    </li>
+                    <li>
+                        <a href="#">Фильтры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-footer-lg useful">
+                <h3>Полезное</h3>
+                <ul>
+                    <li>
+                        <a href="#">Статьи</a>
+                    </li>
+                    <li>
+                        <a href="#">Видеоматериалы</a>
+                    </li>
+                    <li>
+                        <a href="#">Примеры работ</a>
+                    </li>
+                    <li>
+                        <a href="#">Прошивки</a>
+                    </li>
+                    <li>
+                        <a href="#">Программы</a>
+                    </li>
+                    <li>
+                        <a href="#">Инструкции</a>
+                    </li>
+                    <li>
+                        <a href="#">Сертификаты</a>
+                    </li>
+                    <li>
+                        <a href="#">Калькулятор экономии</a>
+                    </li>
+                    <li>
+                        <a href="#">Ссылка на форум</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Общий блок с контактами и ссылками на социальные сети -->
+            <div class="menu-footer contacts">
+                <h3 class="connecting">Присоединяйтесь</h3>
+                <ul class="footer-contacts-list">
+                    <li>
+                        <ul class="social-networks">
+                            <li>
+                                <a href="#">
+                                    <img src="../content/IMG/vk.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../content/IMG/fb.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../content/IMG/d-sc.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../content/IMG/you-tube.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../content/IMG/inst.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-phone">+7 (495) 000-00-00</li>
+                    <li>
+                        <button class="become-partners">Стать партнёром</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>&copy 2017 Testing</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../scripts/scriptSolarStudio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

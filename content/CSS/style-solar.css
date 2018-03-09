@@ -1,0 +1,1112 @@
+/* Общие стили для всех классов */
+
+:root {
+    --footer-color: #eaeaea;
+    --main-color: #3399cc;
+    --mob-size: 759.5px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    background: #fff;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.menu-footer-sm, .arrow {
+    display: block;
+}
+
+body {
+    height: 100px;
+    width: 100%;
+    min-width: 319.98px;
+    max-width: 759.98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 759.5px) {
+    body {
+        min-width: 759.98px;
+        max-width: 1500px;
+        width: 100%;
+    }
+}
+
+/* Стили для первого верхнего блока с кнопкой переключения меню */
+
+.header-logo {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttom-menu {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 16px;
+    left: 18px;
+    box-shadow: none;
+}
+
+.buttom-menu:active {
+    width: 46px;
+    height: 46px;
+    top: 5px;
+    left: 7px;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+
+.buttom-menu img {
+    width: 23px;
+    height: 23px;
+}
+
+.map-position {
+    display: none;
+}
+
+.map-position img {
+    width: 18px;
+    height: 25px;
+}
+
+.map-position a {
+    margin-left: 12px;
+    color: var(--main-color);
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 1.067rem;
+    text-decoration: underline;
+}
+
+/*Стили для меню */
+
+nav {
+    width: 100%;
+}
+
+/* Стили для первого (верхнего) слоя меню */
+
+.first-layer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.first-layer li {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.first-layer li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 4px;
+    padding: 0 13px 0 83px;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 1.2rem;
+    background: var(--main-color);
+    color: #fff;
+}
+
+.first-layer li a img {
+    background: inherit;
+}
+
+.first-layer-img-calc {
+    position: absolute;
+    left: 21px;
+}
+
+.first-layer-img-our-work {
+    position: absolute;
+    left: 15px;
+}
+
+.first-layer-img-about-work {
+    position: absolute;
+    left: 15px;
+}
+
+.first-layer li a:active {
+    background: #0c0b09;
+}
+
+/* Стили для второй полосы меню */
+
+@media screen and (min-width: 759.5px) {
+    .first-layer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 675px;
+        font-size: 0.8rem;
+        background: var(--main-color);
+    }
+    .first-layer li {
+        height: 60px;
+        margin: 0;
+    }
+    .first-layer li:first-child {
+        margin-left: 42px;
+    }
+    .first-layer li:last-child {
+        margin-right: 42px;
+    }
+    .first-layer li a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        padding: 0;
+        margin: 0;
+        font-family: Helvetica;
+        font-weight: normal;
+        font-size: 1.2rem;
+        background: var(--main-color);
+        color: #fff;
+    }
+    .first-layer li a img {
+        margin: 0 15px 0 40px;
+        background: inherit;
+    }
+    .first-layer-img-calc {
+        position: static;
+    }
+    .first-layer-img-our-work {
+        position: static;
+    }
+    .first-layer-img-about-work {
+        position: static;
+    }
+}
+
+/* Стили для второго слоя меню */
+
+.second-layer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.second-layer li:last-child {
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.second-layer li {
+    height: 34px;
+    border-top: 1px solid #cbcbcb;
+    width: 100%;
+}
+
+.second-layer li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+    padding: 0 13px 0 10px;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 1.067rem;
+    color: #717171;
+}
+
+.second-layer li a img {
+    background: inherit;
+}
+
+.second-layer li a:active {
+    background: #ef9312;
+}
+
+/* Устанавливаем стили для ыверхней полосы меню на десктопную версию сайта */
+
+@media screen and (min-width: 759.5px) {
+    .second-layer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 675px;
+        font-size: 0.8rem;
+        height: 25px;
+        margin-bottom: 12px;
+    }
+    .second-layer li:last-child {
+        border-bottom: none;
+        margin-right: 42px;
+    }
+    .second-layer li {
+        height: 25px;
+        border-top: none;
+        width: 100%;
+        flex: 7;
+    }
+    .second-layer li:first-child {
+        margin-left: 42px;
+    }
+    .second-layer li a {
+        display: block;
+        text-align: center;
+        height: 20px;
+        margin-top: 8px;
+        padding: 0;
+        font-family: Helvetica;
+        font-weight: normal;
+        font-size: 0.78rem;
+        color: #717171;
+    }
+    .second-layer li a:active {
+        background: inherit;
+    }
+    .second-layer li:nth-child(4) {
+        flex: 8;
+    }
+    .second-layer li:nth-child(5) {
+        flex: 8;
+    }
+    .second-layer li:nth-child(7) {
+        flex: 9;
+    }
+}
+
+/* Организация хлебных крошек */
+
+.breadcrumbs {
+    padding: 13px 10px;
+    list-style: none;
+}
+
+.breadcrumbs li {
+    display: inline;
+    font-size: 1.2rem;
+}
+
+.breadcrumbs li:last-child {
+    display: none;
+    pointer-events: none;
+}
+
+@media screen and (min-width: 759.5px) {
+    .breadcrumbs {
+        padding: 0;
+        margin: 36px 42px;
+    }
+    .breadcrumbs li:last-child {
+        display: initial;
+        pointer-events: none;
+    }
+}
+
+.breadcrumbs li:last-child a {
+    color: #272d33;
+}
+
+.breadcrumbs li+li:before {
+    padding: 0 10px;
+    color: var(--main-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    content: ">";
+}
+
+.breadcrumbs li a {
+    font-family: RalewayMedium;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.breadcrumbs li a:hover {
+    color: #01447e;
+}
+
+h1 {
+    font-family: RalewayMedium;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding: 12px 10px 0;
+    margin-bottom: 25px;
+}
+
+.tube-style {
+    font-family: RalewayBlack;
+    font-size: 1.55rem;
+}
+
+@media screen and (min-width: 759.5px) {
+    h1 {
+        font-family: RalewayRegular;
+        font-size: 2.2rem;
+        color: var(--main-color);
+        text-transform: uppercase;
+        padding: 6px 42px 0;
+        margin-bottom: 35px;
+    }
+    .tube-style {
+        font-family: RalewayBlack;
+        font-size: 2.2rem;
+    }
+}
+
+/* Стиль для списка товаров */
+
+.product-list {
+    width: 100%;
+    max-width: 840px;
+}
+
+/* Стили карточек с товарами */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    min-width: 255px;
+    max-height: 430px;
+    border: 1px solid #dddddd;
+    border-top: none;
+    margin: 0 30px;
+    padding: 16px 0 24px;
+}
+
+.product-card-first {
+    border-top: 1px solid #dddddd;
+}
+
+.product-card li {
+    margin: 0 36px 0 38px;
+}
+
+/* Перестроение элементов карточки для мониторов с разрешением от 530px до 720px */
+
+@media screen and (min-width: 531.5px) {
+    .product-list {
+        margin: 0 auto;
+    }
+    .product-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 840px;
+    }
+    .product-card li {
+        margin: 0 36px 0 38px;
+        min-width: 180px;
+        width: 100%;
+    }
+    .product-card li:nth-child(odd) {
+        margin-right: 0;
+        margin-bottom: 15px;
+        flex: 2 1 180px;
+    }
+    .product-card li:nth-child(even) {
+        margin-left: 20px;
+        margin-bottom: 15px;
+        flex: 3 3 180px;
+    }
+    .product-card li:nth-child(even) li {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 731.5px) {
+    .product-card li:nth-child(odd) {
+        margin-right: 0;
+        margin-bottom: 15px;
+        flex: 2 1 220px;
+    }
+    .product-card li:nth-child(even) {
+        margin-left: 20px;
+        margin-bottom: 15px;
+        flex: 3 3 220px;
+    }
+}
+
+/* Стили для десктоп версии */
+
+@media screen and (min-width: 759.5px) {
+    .product-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        min-width: 675px;
+        min-height: 120px;
+        margin: 0 30px;
+        padding: 13px 0;
+        box-sizing: border-box;
+    }
+    .product-card li {
+        margin: 0;
+        min-width: 10px;
+        width: 100%;
+    }
+    .calculator-tube {
+        display: none;
+    }
+}
+
+.product-card-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-card-img img {
+    width: 180px;
+    height: 150px;
+}
+
+.about-product {
+    margin: 20px 0 20px;
+}
+
+.about-product li {
+    min-width: 180px;
+    margin: 0;
+}
+
+.about-product li:first-child {
+    font-family: RalewaySemiBold;
+    font-size: 1rem;
+    color: #272d33;
+    margin-bottom: 5px;
+}
+
+.about-product li:last-child {
+    font-family: RalewayRegular;
+    font-size: 1rem;
+    color: #a2a2a2;
+}
+
+.cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.cost p {
+    font-family: RalewaySemiBold;
+    font-size: 1.8rem;
+    color: #272d33;
+    margin-bottom: 5px;
+}
+
+.cost img {
+    width: 15px;
+    height: 18px;
+}
+
+.calculator-tube {
+    width: 26px;
+    height: 28px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.calculator-tube img {
+    width: 26px;
+    height: 28px;
+}
+
+.weight {
+    font-family: RalewayRegular;
+    font-size: 0.8rem;
+    color: #b2b2b2;
+    margin-left: 38px;
+    text-transform: uppercase;
+}
+
+.busket {
+    min-width: 180px;
+    max-width: 100%;
+    height: 60px;
+}
+
+.product-card li:nth-child(4) {
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 530px) {
+    .product-card li:nth-child(4) {
+        margin-top: 0;
+    }
+}
+
+.busket button {
+    width: 100%;
+    height: 38px;
+    background: var(--main-color);
+    font-family: RalewayRegular;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.busket button img {
+    background: inherit;
+    margin-right: 10px;
+}
+
+.in-stock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.in-stock img {
+    width: 11px;
+    height: 10px;
+}
+
+.in-stock p {
+    font-family: RalewayRegular;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #b2b2b2;
+    margin-left: 8px;
+}
+
+.calculator {
+    display: none;
+}
+
+/* Стилизация для десктоп версии блока с информацией о продукте */
+
+@media screen and (min-width: 759.5px) {
+    .product-card-img {
+        justify-content: flex-start;
+        height: 95px;
+    }
+    .product-card-img img {
+        width: 115px;
+        height: 95px;
+    }
+    .about-product {
+        margin: 0;
+    }
+    .about-product li {
+        margin-bottom: 10px;
+    }
+    .product-card li:nth-child(odd) {
+        margin: 0;
+        flex: 1 1;
+    }
+    .product-card li:nth-child(even) {
+        margin: 0;
+        flex: 1 1;
+    }
+    .product-card li:first-child {
+        margin-left: 15px;
+        flex-basis: 115px;
+    }
+    .product-card li:nth-child(2) {
+        margin-left: 20px;
+        flex-basis: 194px;
+    }
+    .product-card li:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 45px;
+        flex-basis: 105px;
+    }
+    .product-card li:nth-child(4) {
+        flex-basis: 120px;
+        margin: 0 15px;
+    }
+    .product-card li:nth-child(5) {
+        flex-basis: 26px;
+        margin-right: 15px;
+        text-align: center;
+    }
+    .cost {
+        display: block;
+        margin-left: 0;
+    }
+    .cost p {
+        font-family: RalewaySemiBold;
+        font-size: 1.8rem;
+        color: #272d33;
+        margin-bottom: 5px;
+    }
+    .cost img {
+        width: 15px;
+        height: 18px;
+    }
+    .weight {
+        font-family: RalewayRegular;
+        font-size: 0.8rem;
+        color: #b2b2b2;
+        margin-left: 0;
+        text-transform: uppercase;
+    }
+    .busket {
+        min-width: 115px;
+        height: 60px;
+    }
+    .busket button {
+        width: 100%;
+        height: 38px;
+        background: var(--main-color);
+        font-family: RalewayRegular;
+        font-size: 1rem;
+        color: #fff;
+    }
+    .busket button img {
+        background: inherit;
+        margin-right: 10px;
+    }
+    .in-stock {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .in-stock img {
+        width: 11px;
+        height: 10px;
+    }
+    .in-stock p {
+        font-family: RalewayRegular;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        color: #b2b2b2;
+        margin-left: 8px;
+    }
+    .calculator {
+        display: block;
+    }
+}
+
+/*Стили пагинации*/
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-width: 259px;
+    margin: 20px 30px 0 30px;
+}
+
+@media screen and (min-width: 510px) {
+    .pagination {
+        justify-content: space-around;
+    }
+}
+
+.pagination-bar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.pagination-bar li {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+}
+
+.pagination-bar li:first-child, .pagination-bar li:last-child {
+    width: 60px;
+}
+
+.pagination li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: RalewayRegular;
+    color: var(--main-color);
+    height: 33px;
+    border: 1px solid #dddddd;
+    border-right: none;
+}
+
+.pagination-bar li:nth-child(6) a {
+    pointer-events: none;
+    cursor: default;
+}
+
+.pagination-bar li:nth-child(6) a:hover {
+    cursor: default;
+}
+
+.pagination-bar li:last-child a {
+    border: 1px solid #dddddd;
+}
+
+.pagination .active {
+    background: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+}
+
+.pagination li a:active {
+    background: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+}
+
+.previous-next-page {
+    background: inherit;
+    color: inherit;
+}
+
+@media screen and (min-width: 759.5px) {
+    .pagination-bar {
+        margin-right: 25px;
+    }
+    .pagination {
+        justify-content: center;
+    }
+    .pagination-bar li:first-child, .pagination-bar li:last-child {
+        width: 140px;
+    }
+    .mobil {
+        margin: 0 7px;
+    }
+}
+
+.pagination-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pagination-selector-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 33px;
+    margin-left: 7px;
+    font-family: RalewayRegular;
+    font-size: 1rem;
+    color: #272d33;
+    border: 1px solid #dddddd;
+    background: url('image/drop-down.svg') no-repeat 11px 12px;
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 759.5px) {
+    .pagination-selector-dropdown {
+        margin-right: 7px;
+    }
+}
+
+.pagination-selector-dropdown:hover {
+    cursor: pointer;
+}
+
+.pagination-selector-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 33px;
+    margin-left: 7px;
+    font-family: RalewayRegular;
+    font-size: 1rem;
+    color: #272d33;
+    border: 1px solid #dddddd;
+}
+
+/* .pagination-selector-dropdown-menu{    
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+/*Стили для футера*/
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 168px;
+    padding: 20px 0 0;
+    margin-top: 50px;
+    background: var(--footer-color);
+}
+
+@media screen and (min-width: 759.5px) {
+    .footer-container {
+        height: 330px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .footer-container {
+        justify-content: space-around;
+    }
+}
+
+.menu-footer-sm, .menu-footer-sm li {
+    background: var(--footer-color);
+}
+
+.menu-footer-sm li a {
+    margin-left: 13px;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: #828282;
+    background: var(--footer-color);
+}
+
+.contacts {
+    margin-right: 13px;
+    background: var(--footer-color);
+}
+
+.footer-contacts-list {
+    background: var(--footer-color);
+}
+
+.footer-contacts-list li {
+    background: var(--footer-color);
+}
+
+.connecting {
+    display: none;
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 145px;
+    background: var(--footer-color)
+}
+
+.social-networks li {
+    background: inherit;
+}
+
+.social-networks li a {
+    background: inherit;
+}
+
+.social-networks li a img {
+    background: inherit;
+}
+
+.footer-phone {
+    margin: 10px 0;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: #828282;
+    background: var(--footer-color);
+}
+
+.become-partners {
+    width: 145px;
+    height: 23px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+    background: var(--main-color);
+}
+
+.copy-right {
+    width: 100%;
+    background: var(--footer-color)
+}
+
+.copy-right p {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    color: #828282;
+    background: inherit;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+@media screen and (min-width: 759.5px) {
+    .menu-footer-lg, .menu-footer-lg h3, .menu-footer-lg li {
+        background: var(--footer-color);
+    }
+    .menu-footer-lg h3 {
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #828282;
+        margin-bottom: 16px;
+    }
+    .menu-footer-lg li a {
+        margin-left: 0;
+        font-family: Helvetica;
+        font-weight: normal;
+        font-size: 0.9rem;
+        line-height: 1.7rem;
+        color: #828282;
+        background: var(--footer-color);
+    }
+    .copy-right {
+        width: 100%;
+        background: var(--footer-color)
+    }
+    .copy-right p {
+        font-family: Helvetica;
+        font-weight: lighter;
+        font-size: 0.9rem;
+        color: #828282;
+        background: inherit;
+        text-align: left;
+        padding-bottom: 18px;
+        margin-left: 20px;
+    }
+}
+
+/* Переключение меню с помошью добавления удаления классов */
+
+.gamburgerOpen {
+    display: block;
+}
+
+.gamburgerClosed {
+    display: none;
+}
+
+.HeaderOpened {
+    display: flex;
+}
+
+.HeaderClosed {
+    display: none;
+}
+
+/* Отключаем те блоки которые не используются в мобильной версии */
+
+.desktop, .menu-footer-lg, .header-logo-contact {
+    display: none;
+}
+
+@media screen and (min-width:759.5px) {
+    .menu-footer-sm {
+        display: none;
+    }
+    /* Подключили те блоки которые выключались для мобильной версии */
+    .menu-footer-lg, .gamburgerClosed, .gamburgerOpen, .map-position, .desktop, .header-logo-contact, .HeaderClosed, .HeaderOpened {
+        display: block;
+    }
+    .buttom-menu, .arrow {
+        display: none;
+    }
+}
+
+/* Конец классов переключения меню */
+
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: Helvetica;
+    src: url('fonts/HelveticaNeueCyr-Bold.ttf');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url('fonts/HelveticaNeueCyr-Light.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url('fonts/HelveticaNeueCyr-Medium.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url('fonts/HelveticaNeueCyr-Roman.otf');
+    font-weight: normal;
+}
+
+/* Шрифты Raleway */
+
+@font-face {
+    font-family: RalewayMedium;
+    src: url('fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: RalewayBold;
+    src: url('fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: RalewayBlack;
+    src: url('fonts/Raleway-Black.ttf');
+}
+
+@font-face {
+    font-family: RalewayLight;
+    src: url('fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+    font-family: RalewayRegular;
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url('fonts/Raleway-SemiBold.ttf');
+}
