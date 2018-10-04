@@ -1,0 +1,14 @@
+body {
+
+    background: #141b23;
+    color: #e7e7e7; 
+    font-family: Raleway;
+}
+
+@font-face {
+    font-family: "Raleway"; 
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
