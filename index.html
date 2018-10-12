@@ -6,19 +6,41 @@
     <meta name="description" content="Это пример HTML5" />
     <meta name="keywords" content="HTML5, CSS, JavaScript" />
     <title>My first page</title>
-    <link rel="stylesheet" href="Content/CSS/Header.css" />
-    <link rel="stylesheet" href="Content/CSS/myportfolio.css" />
+    <link rel="stylesheet" href="content/CSS/NavMenu.css" />
+    <link rel="stylesheet" href="content/CSS/myportfolio.css" />
     <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="content/IMG/favicon.ico">
+
 </head>
 
 <body>
-    <div id="includedContent"></div>
-    <div class="wrapper"></div>
-    <footer>Copyright &copy; 2018, Perm</footer>
+    <div class="navMenu">
+        <nav class="navigation-menu navigation-menu--open js-nav-menu">
+            <div class="navigation-menu__toggle js-nav-menu-toggle">
+                <div class="mainNavMenuBurger" id="mainNavMenuBurger">
+                    <div class="menu-burger">
+                    </div>
+                </div>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-list__item"><a href="index.html">Главная</a></li>
+                <li class="menu-list__item"><a href="Pages\pixel-plus middle.html">Pixel Plus</a></li>
+                <li class="menu-list__item"><a href="Pages\solar-studio.html">Solar Studio</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <section>
+
+        </section>
+        <footer>Copyright &copy; 2018, Perm</footer>
+    </div>
+
 
     <script>
-        $("#includedContent").load("Pages/header.html");
+        $("#includedContent").load("Pages/NavMenu.html");
     </script>
     <script src="Scripts/main.js"></script>
 </body>

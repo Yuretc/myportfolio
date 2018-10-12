@@ -5,12 +5,15 @@
     <meta charset="utf-8" />
     <title>Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../content/CSS/NavMenu.css" />
     <link rel="stylesheet" href="../content/css/style-solar.css" />
-    <!-- <link rel="stylesheet" media="screen and (min-width: 760px)" href="Content/max-width-760-px.css" /> -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
+
+    <div id="includedContent"></div>
     <!-- В HEADER документа определяем логотип, оба  меню, выбор геолокации и контакты -->
     <header>
         <button class="buttom-menu gamburgerOpen" id="buttonMenuOpened">
@@ -123,7 +126,10 @@
             </ul>
         </div>
         <h1>
-            <span class="tube-style">Труба</span> прямоугольная профильная ГОСТ 8645-68 И ГОСТ 30245-2003
+            <span class="tube-style">Труба</span> прямоугольная профильная <wbr>ГОСТ 8645-68 и <wbr>ГОСТ 30245-2003
+
+
+
         </h1>
         <!-- Блок с товарами -->
         <ul class="product-list">
@@ -885,8 +891,11 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="../scripts/scriptSolarStudio.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script>
+        $("#includedContent").load("../Pages/NavMenu.html");
+    </script>
+    <script src="../Scripts/main.js"></script>
+
 </body>
 
 </html>

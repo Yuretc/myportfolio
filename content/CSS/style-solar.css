@@ -1057,25 +1057,25 @@ h1 {
 
 @font-face {
     font-family: Helvetica;
-    src: url('fonts/HelveticaNeueCyr-Bold.ttf');
+    src: url('../fonts/HelveticaNeueCyr-Bold.ttf');
     font-weight: bolder;
 }
 
 @font-face {
     font-family: Helvetica;
-    src: url('fonts/HelveticaNeueCyr-Light.ttf');
+    src: url('../fonts/HelveticaNeueCyr-Light.ttf');
     font-weight: lighter;
 }
 
 @font-face {
     font-family: Helvetica;
-    src: url('fonts/HelveticaNeueCyr-Medium.otf');
+    src: url('../fonts/HelveticaNeueCyr-Medium.otf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: Helvetica;
-    src: url('fonts/HelveticaNeueCyr-Roman.otf');
+    src: url('../fonts/HelveticaNeueCyr-Roman.otf');
     font-weight: normal;
 }
 
@@ -1083,30 +1083,30 @@ h1 {
 
 @font-face {
     font-family: RalewayMedium;
-    src: url('fonts/Raleway-Medium.ttf');
+    src: url('../fonts/Raleway-Medium.ttf');
 }
 
 @font-face {
     font-family: RalewayBold;
-    src: url('fonts/Raleway-Bold.ttf');
+    src: url('../fonts/Raleway-Bold.ttf');
 }
 
 @font-face {
     font-family: RalewayBlack;
-    src: url('fonts/Raleway-Black.ttf');
+    src: url('../fonts/Raleway-Black.ttf');
 }
 
 @font-face {
     font-family: RalewayLight;
-    src: url('fonts/Raleway-Light.ttf');
+    src: url('../fonts/Raleway-Light.ttf');
 }
 
 @font-face {
     font-family: RalewayRegular;
-    src: url('fonts/Raleway-Regular.ttf');
+    src: url('../fonts/Raleway-Regular.ttf');
 }
 
 @font-face {
     font-family: RalewaySemiBold;
-    src: url('fonts/Raleway-SemiBold.ttf');
+    src: url('../fonts/Raleway-SemiBold.ttf');
 }

@@ -1,14 +1,29 @@
-body {
+:root {
+    --main-color-text: #141b23;
+    --second-color: #2766ad
+}
 
-    background: #141b23;
-    color: #e7e7e7; 
+body {
+    width: 100%;
+    background: white;
+    color: var(--main-color-text);
     font-family: Raleway;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+section {
+    flex: 1;
 }
 
 @font-face {
-    font-family: "Raleway"; 
-    src: url("../fonts/Raleway-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
-
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
