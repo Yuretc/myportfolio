@@ -17,8 +17,17 @@ body {
     min-height: 100vh;
 }
 
-section {
+section {    
+    width: 100%;
+    max-width: 1040px;
+    margin: 20px auto 0px;
     flex: 1;
+}
+
+footer{
+    width: 100%;
+    max-width: 1040px;
+    margin: 10px auto;
 }
 
 @font-face {

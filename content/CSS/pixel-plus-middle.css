@@ -1,4 +1,7 @@
-﻿.navbar{
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+.navbar{
     width: 100%;
 }
 body {
@@ -11,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    /* background-color: grey; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 header,
@@ -43,9 +46,9 @@ header {
     margin: 10px 10px 14px 12px ;
 }
 .name h1{
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: bold;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     margin: 0;
 }
 
@@ -59,19 +62,28 @@ header {
     font-size: 1.5rem;
     line-height: 1.8rem;
     margin: 15px 0 0 0;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .contacts p{
     margin: 0
 }
 
+.contacts p:last-child{
+    margin-top: 10px;
+}
+
+.phone{
+    font-size: 2.1rem;
+}
+
 .navigation {
     justify-content: center;
     align-self: stretch;
-    min-height: 5.7rem;
+    min-height: 80px;
     width: 100%;
     background: #767676;
-    padding: 2em 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navigation ul{
@@ -169,6 +181,7 @@ section {
     order: 1;
     background: #767676;
     font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     padding: 1.5rem 3.8rem 1.5rem 2.4rem;
 }
@@ -192,6 +205,7 @@ section {
     padding: 0.71em;
     padding-bottom: 0;
     font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
     color: #767676;
 }
 @media screen and (max-width: 760px) {
