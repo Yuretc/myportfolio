@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 :root {
     --body-color: #fff;
-    --menu-background-color: #4E567E;
+    --menu-background-color: rgb(15, 25, 59);
 }
 
 * {
@@ -12,10 +12,10 @@
     background-color: var(--menu-background-color);
     height: 100%;
     position: fixed;
-    min-width: 300px;
-    width: 20vw;
+    width: 100%;
     z-index: 100;
     transition: transform .3s;
+    left: 0;
 }
 
 .navigation-menu--open{
@@ -39,7 +39,12 @@
     top: -50px;
     position: absolute;
     transform: rotate(45deg);
+    transition: transform 0.5s ease-out;
     z-index: 0;
+}
+
+.navigation-menu__toggle--open{
+    transform: translateX(-50%) rotate(45deg);
 }
 
 .mainNavMenuBurger {
