@@ -3,6 +3,11 @@
     --second-color: #2766ad
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 100%;
     background: white;
@@ -11,10 +16,37 @@ body {
     margin: 0;
 }
 
+h1{
+   padding-left: 22vw;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 30px 0 20px;
+}
+
+.about-me p{
+    margin-left: 5vw;
+    margin-bottom: 20px;
+    width: 40vw;
+}
+
+.my-photo{
+    width: 16vw;
+    height: 24vw;
+    border: 1px solid #141b23;
+    background-image: url('../IMG/my-photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section {    
@@ -22,6 +54,12 @@ section {
     max-width: 1040px;
     margin: 20px auto 0px;
     flex: 1;
+}
+
+.my-progects{
+    margin-left: 20vw;
+    margin-top: 20px;
+    width: 61vw;
 }
 
 footer{
