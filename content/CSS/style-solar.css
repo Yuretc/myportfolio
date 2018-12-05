@@ -52,7 +52,7 @@ body {
 @media screen and (min-width: 759.5px) {
     body {
         min-width: 759.98px;
-        max-width: 1500px;
+        max-width: 100%;
         width: 100%;
     }
 }
@@ -69,7 +69,7 @@ body {
 
 .logo-geo-phone {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1020px;
     min-width: 760px;
     display: flex;
     flex-direction: row;
@@ -177,6 +177,10 @@ nav {
 
 /* Стили для первого (верхнего) слоя меню */
 
+.menuFirstLayer {
+    background: var(--main-color);
+}
+
 .first-layer {
     display: flex;
     flex-direction: column;
@@ -233,8 +237,10 @@ nav {
     .first-layer {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        max-width: 1060px;
         min-width: 675px;
+        margin: 0 auto;
         font-size: 0.8rem;
         background: var(--main-color);
     }
@@ -322,11 +328,12 @@ nav {
     .second-layer {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        max-width: 1060px;
         min-width: 675px;
         font-size: 0.8rem;
         height: 25px;
-        margin-bottom: 12px;
+        margin: 0 auto 12px;
     }
     .second-layer li:last-child {
         border-bottom: none;
@@ -923,7 +930,6 @@ select::-ms-expand {
         margin-right: 7px;
         padding-left: 30px;
     }
-
 }
 
 .pagination-selector-dropdown:hover {
