@@ -67,40 +67,40 @@ body {
     align-items: center;
 }
 
-.logo-geo-phone{
+.logo-geo-phone {
     width: 100%;
     max-width: 1200px;
     min-width: 760px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.logo-geo{
+.logo-geo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-@media screen and (max-width: 759.5px){
-    .logo-geo-phone{
+@media screen and (max-width: 759.5px) {
+    .logo-geo-phone {
         min-width: 320px;
         margin-left: 0;
     }
-    .logo-geo{
+    .logo-geo {
         width: 100%;
         justify-content: center;
     }
 }
 
-.logo{
+.logo {
     width: 54px;
     margin: 22px 36px 20px 43px;
     background: url("../IMG/logo.png") center center / 100% no-repeat;
 }
 
-.map-position{
+.map-position {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -108,7 +108,7 @@ body {
     margin-bottom: 20px;
 }
 
-.header-logo-contact{
+.header-logo-contact {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -117,15 +117,15 @@ body {
     font-family: Helvetica;
 }
 
-.header-logo-contact a{    
+.header-logo-contact a {
     font-size: 1rem;
     text-decoration: underline;
     color: var(--main-color);
 }
 
-.header-logo-contact p{
+.header-logo-contact p {
     font-size: 1.1rem;
-    color:  #999;
+    color: #999;
 }
 
 .buttom-menu {
@@ -458,10 +458,10 @@ h1 {
 .product-card {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     flex-wrap: wrap;
     min-width: 255px;
-    max-height: 430px;
+    /* max-height: 430px; */
     border: 1px solid #dddddd;
     border-top: none;
     margin: 0 30px;
@@ -546,9 +546,10 @@ h1 {
 }
 
 .product-card-img {
+    max-width: 180px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .product-card-img img {
@@ -557,6 +558,7 @@ h1 {
 }
 
 .about-product {
+    max-width: 180px;
     margin: 20px 0 20px;
 }
 
@@ -793,7 +795,7 @@ h1 {
     flex-wrap: wrap;
     align-content: space-between;
     min-width: 259px;
-    margin: 20px 30px 0 30px;
+    margin: 20px 30px 0;
 }
 
 @media screen and (min-width: 510px) {
@@ -863,11 +865,10 @@ h1 {
 }
 
 @media screen and (min-width: 759.5px) {
-    .pagination-bar {
-        margin-right: 25px;
-    }
     .pagination {
-        justify-content: center;
+        max-width: 780px;
+        justify-content: space-between;
+        margin: 20px 30px;
     }
     .pagination-bar li:first-child, .pagination-bar li:last-child {
         width: 140px;
@@ -875,6 +876,16 @@ h1 {
     .mobil {
         margin: 0 7px;
     }
+}
+
+@media screen and (min-width: 855.5px) {
+    .pagination {
+        margin: 20px auto 30px;
+    }
+}
+
+select::-ms-expand {
+    display: none;
 }
 
 .pagination-selector {
@@ -887,7 +898,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 122px;
     height: 33px;
     margin-left: 7px;
     font-family: RalewayRegular;
@@ -895,13 +906,24 @@ h1 {
     color: #272d33;
     border: 1px solid #dddddd;
     background: url('../IMG/drop-down.svg') no-repeat 11px 12px;
-    padding-left: 20px;
+    padding-left: 30px;
+    /*for WebKit*/
+    -webkit-appearance: none;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
 }
 
 @media screen and (min-width: 759.5px) {
     .pagination-selector-dropdown {
         margin-right: 7px;
+        padding-left: 30px;
     }
+
 }
 
 .pagination-selector-dropdown:hover {
@@ -912,7 +934,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 46px;
+    width: 48px;
     height: 33px;
     margin-left: 7px;
     font-family: RalewayRegular;
@@ -1106,7 +1128,7 @@ h1 {
     .menu-footer-lg, .gamburgerClosed, .gamburgerOpen, .desktop, .HeaderClosed, .HeaderOpened {
         display: block;
     }
-    .map-position, .header-logo-contact{
+    .map-position, .header-logo-contact {
         display: flex;
     }
     .buttom-menu, .arrow {
